@@ -23,3 +23,7 @@ services:
       MYSQL_USER: exampleuser
       MYSQL_PASSWORD: examplepass
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - vl_db_data:/var/lib/mysql
+volumes:
+  vl_db_data:
